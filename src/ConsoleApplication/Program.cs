@@ -19,9 +19,10 @@ namespace ConsoleApplication
         /// </summary>
         public static void Main()
         {
-            for (int i = 0; i<100;i++)
+            for (int i = 0;  i< 100; i++)
             {
-                var train = new Train($"trencito{i}");
+                var Tren = new Train($"trencito{i}");
+                Console.WriteLine(Tren);
             }
            
         }

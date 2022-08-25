@@ -26,6 +26,9 @@ namespace ConsoleApplication
                 var Tren = new Train($"Trencito nro {i}");
             }
             Console.WriteLine($"Se crean {Train.Count} instancias de la clase");
+            var t1 = new Train( "Last Train To London");
+            var t2 = new Train( "Last Train To London");
+            var t3 = new Train("Runaway Train");
         }
     }
 }

@@ -79,13 +79,13 @@ namespace ClassLibrary
         public Train (string Nombre)
         {
             Train.Name = Nombre;
-            count++;
             Console.WriteLine("Construyendo...");
+            count++;
         }
         ~Train()
         {
-            count--;
             Console.WriteLine("Destruyendo...");
+            count--;
         } 
     }
 }

@@ -61,27 +61,16 @@ namespace ClassLibrary
             {
                 Train.count = value;
             }
-
         }
-        public static string Name 
-        {
-            get
-            { 
-                return Train.Name;
-            }
-            set
-            {
-                Train.Name = value;
-            }
-
-        }
+        private static string Name;
+        public string name {get; set;}
 
         public Train (string Nombre)
         {
-            Train.Name = Nombre;
-            Console.WriteLine("Construyendo...");
+            this.name = Nombre;
+            Console.WriteLine($"Creando {this.name}");
             count++;
-        }
+        } 
         ~Train()
         {
             Console.WriteLine("Destruyendo...");

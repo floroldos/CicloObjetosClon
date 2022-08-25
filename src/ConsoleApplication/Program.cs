@@ -19,7 +19,9 @@ namespace ConsoleApplication
         /// </summary>
         public static void Main()
         {
-            for (int i = 0; i < 100; i++)
+            /*en este caso se crean tantas instancias en el heap que el destructor empieza a borrar 
+            las que no están en uso para liberar espacios de memoria y crear unas nuevas.*/
+            for (int i = 0; i < 10000000; i++)
             {
                 var Tren = new Train($"Trencito nro {i}");
             }
